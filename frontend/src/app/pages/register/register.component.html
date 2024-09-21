@@ -1,0 +1,41 @@
+
+<div class="min-h-screen bg-black flex items-center justify-center">
+    <div class="bg-black p-8 rounded-lg shadow-md w-full max-w-sm border">
+      <h2 class="text-3xl font-bold text-center mb-6 text-white">Register</h2>
+      
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-white">Nombre</label>
+          <input type="text" id="name" class="mt-1 p-2 w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ingresa tu nombre">
+        </div>
+  
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-white">Email</label>
+          <input type="email" id="email" class="mt-1 p-2 w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ingresa tu email">
+        </div>
+        
+        <div class="mb-4">
+          <label for="password" class="block text-sm font-medium text-white">Contraseña</label>
+          <input type="password" id="password" class="mt-1 p-2 w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ingresa tu contraseña">
+        </div>
+        
+        <div class="mb-6">
+          <label for="confirm-password" class="block text-sm font-medium text-white">Confirmar contraseña</label>
+          <input type="password" id="confirm-password" class="mt-1 p-2 w-full border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Confirmar contraseña">
+        </div>
+        
+        <div>
+          <button routerLink="/dashboard" routerLinkActive="router-link-active" class="w-full bg-indigo-500 text-white p-2 rounded-lg hover:bg-indigo-600 transition-colors hover:scale-95 duration-300">Register</button>
+        </div>
+      </form>
+  
+      <div class="text-center mt-4">
+        <p class="text-sm text-gray-600">
+          Already have an account?
+          <a routerLink="/login" routerLinkActive="router-link-active" class="text-indigo-500 hover:underline">log in</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+<router-outlet></router-outlet>
